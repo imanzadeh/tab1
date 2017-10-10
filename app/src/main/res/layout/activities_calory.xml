@@ -7,7 +7,15 @@
     android:background="@color/colorPrimary">
 
 
-    <GridView
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_activity_calory"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvActivitiesList">
+
+    </ListView>
 </LinearLayout>
