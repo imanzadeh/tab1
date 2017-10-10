@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">tab1</string>
+    <string name="btn_inset_onclick">btn_inset_onclick</string>
+    <string name="btn_edit">btn_edit</string>
+    <string name="btn_delete">btn_delete</string>
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textDirection="rtl">
+
+        <TextView
+            android:text="نام غذا"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="22dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginTop="62dp"
+            android:id="@+id/tv_food"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="نام غذا"
+            android:ems="10"
+            android:id="@+id/et_food_name"
+            android:textSize="20dp"
+            android:layout_alignBaseline="@+id/tv_food"
+            android:layout_alignBottom="@+id/tv_food"
+            android:layout_toLeftOf="@+id/tv_food"
+            android:layout_toStartOf="@+id/tv_food"
+            android:layout_marginRight="29dp"
+            android:layout_marginEnd="29dp" />
+
+        <TextView
+            android:text="کالری"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tv_food"
+            android:layout_alignRight="@+id/tv_food"
+            android:layout_alignEnd="@+id/tv_food"
+            android:id="@+id/tv_calory"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="کالری"
+            android:ems="10"
+            android:layout_alignBaseline="@+id/tv_calory"
+            android:layout_alignBottom="@+id/tv_calory"
+            android:layout_toLeftOf="@+id/tv_calory"
+            android:layout_toStartOf="@+id/tv_calory"
+            android:layout_alignTop="@+id/tv_calory"
+            android:layout_alignRight="@+id/et_food_name"
+            android:layout_alignEnd="@+id/et_food_name"
+            android:id="@+id/et_food_calory"
+            android:textSize="20sp"/>
+
+        <Button
+            android:text="ویرایش"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_edit"
+            android:layout_alignBaseline="@+id/btn_insert"
+            android:layout_alignBottom="@+id/btn_insert"
+            android:layout_centerHorizontal="true"
+            android:onClick="btn_edit_onclick" />
+
+        <Button
+            android:text="حذف"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_delete"
+            android:layout_alignBaseline="@+id/btn_insert"
+            android:layout_alignBottom="@+id/btn_insert"
+            android:layout_alignLeft="@+id/et_food_calory"
+            android:layout_alignStart="@+id/et_food_calory"
+            android:onClick="btn_delete_onclick" />
+
+        <Button
+            android:text="درج"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:id="@+id/btn_insert"
+            android:layout_below="@+id/et_food_calory"
+            android:layout_alignRight="@+id/tv_calory"
+            android:layout_alignEnd="@+id/tv_calory"
+            android:onClick="btn_inset_onclick" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:layout_below="@+id/btn_edit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:id="@+id/et_id" />
+    </RelativeLayout>
+
+</LinearLayout>
